@@ -1,0 +1,416 @@
+JDPs-MacBook-Pro:Chapter03 purcellj$ npm install
+npm WARN deprecated fs-promise@1.0.0: Use mz or fs-extra^3.0 with Promise Support
+npm WARN deprecated gulp-util@3.0.8: gulp-util is deprecated - replace it, following the guidelines at https://medium.com/gulpjs/gulp-util-ca3b1f9f9ac5
+npm WARN deprecated crypto@0.0.3: This package is no longer supported. It's now a built-in Node module. If you've depended on crypto, you should switch to the one that's built-in.
+
+> dtrace-provider@0.8.6 install /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/dtrace-provider
+> node-gyp rebuild || node suppress-error.js
+
+xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+
+xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+
+  ACTION binding_gyp_ndtp_target_build_ndtp .
+/bin/sh: Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/dtrace-provider/build/Release/lib.host:/Users/purcellj/Box: No such file or directory
+  TOUCH Release/obj.target/ndtp.stamp
+
+> pkcs11js@1.0.15 install /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js
+> node-gyp rebuild
+
+xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+
+xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+
+  CXX(target) Release/obj.target/pkcs11/src/main.o
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.7.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name main.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu core2 -target-linker-version 305 -v -dwarf-column-info -debug-info-kind=standalone -dwarf-version=2 -debugger-tuning=lldb -coverage-notes-file /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build/Release/obj.target/pkcs11/src/main.gcno -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0 -dependency-file ./Release/.deps/Release/obj.target/pkcs11/src/main.o.d.raw -MT Release/obj.target/pkcs11/src/main.o -D NODE_GYP_MODULE_NAME=pkcs11 -D USING_UV_SHARED=1 -D USING_V8_SHARED=1 -D V8_DEPRECATION_WARNINGS=1 -D _DARWIN_USE_64_BIT_INODE=1 -D _LARGEFILE_SOURCE -D _FILE_OFFSET_BITS=64 -D BUILDING_NODE_EXTENSION -I /Users/purcellj/.node-gyp/8.10.0/include/node -I /Users/purcellj/.node-gyp/8.10.0/src -I /Users/purcellj/.node-gyp/8.10.0/deps/uv/include -I /Users/purcellj/.node-gyp/8.10.0/deps/v8/include -I ../../nan -I ../includes -stdlib=libc++ -stdlib=libc++ -Os -Wall -Wendif-labels -W -Wno-unused-parameter -std=c++11 -fdeprecated-macro -fdebug-compilation-dir /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fno-rtti -fno-threadsafe-statics -fobjc-runtime=macosx-10.7.0 -fencode-extended-block-signature -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -vectorize-loops -vectorize-slp -o Release/obj.target/pkcs11/src/main.o -x c++ ../src/main.cpp
+clang -cc1 version 9.0.0 (clang-900.0.39.2) default target x86_64-apple-darwin17.4.0
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/src"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/uv/include"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/v8/include"
+ignoring nonexistent directory "/usr/include/c++/v1"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/purcellj/.node-gyp/8.10.0/include/node
+ ../../nan
+ ../includes
+ /Library/Developer/CommandLineTools/usr/include/c++/v1
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include
+ /Library/Developer/CommandLineTools/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+  CXX(target) Release/obj.target/pkcs11/src/dl.o
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.7.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name dl.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu core2 -target-linker-version 305 -v -dwarf-column-info -debug-info-kind=standalone -dwarf-version=2 -debugger-tuning=lldb -coverage-notes-file /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build/Release/obj.target/pkcs11/src/dl.gcno -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0 -dependency-file ./Release/.deps/Release/obj.target/pkcs11/src/dl.o.d.raw -MT Release/obj.target/pkcs11/src/dl.o -D NODE_GYP_MODULE_NAME=pkcs11 -D USING_UV_SHARED=1 -D USING_V8_SHARED=1 -D V8_DEPRECATION_WARNINGS=1 -D _DARWIN_USE_64_BIT_INODE=1 -D _LARGEFILE_SOURCE -D _FILE_OFFSET_BITS=64 -D BUILDING_NODE_EXTENSION -I /Users/purcellj/.node-gyp/8.10.0/include/node -I /Users/purcellj/.node-gyp/8.10.0/src -I /Users/purcellj/.node-gyp/8.10.0/deps/uv/include -I /Users/purcellj/.node-gyp/8.10.0/deps/v8/include -I ../../nan -I ../includes -stdlib=libc++ -stdlib=libc++ -Os -Wall -Wendif-labels -W -Wno-unused-parameter -std=c++11 -fdeprecated-macro -fdebug-compilation-dir /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fno-rtti -fno-threadsafe-statics -fobjc-runtime=macosx-10.7.0 -fencode-extended-block-signature -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -vectorize-loops -vectorize-slp -o Release/obj.target/pkcs11/src/dl.o -x c++ ../src/dl.cpp
+clang -cc1 version 9.0.0 (clang-900.0.39.2) default target x86_64-apple-darwin17.4.0
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/src"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/uv/include"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/v8/include"
+ignoring nonexistent directory "/usr/include/c++/v1"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/purcellj/.node-gyp/8.10.0/include/node
+ ../../nan
+ ../includes
+ /Library/Developer/CommandLineTools/usr/include/c++/v1
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include
+ /Library/Developer/CommandLineTools/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+  CXX(target) Release/obj.target/pkcs11/src/const.o
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.7.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name const.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu core2 -target-linker-version 305 -v -dwarf-column-info -debug-info-kind=standalone -dwarf-version=2 -debugger-tuning=lldb -coverage-notes-file /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build/Release/obj.target/pkcs11/src/const.gcno -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0 -dependency-file ./Release/.deps/Release/obj.target/pkcs11/src/const.o.d.raw -MT Release/obj.target/pkcs11/src/const.o -D NODE_GYP_MODULE_NAME=pkcs11 -D USING_UV_SHARED=1 -D USING_V8_SHARED=1 -D V8_DEPRECATION_WARNINGS=1 -D _DARWIN_USE_64_BIT_INODE=1 -D _LARGEFILE_SOURCE -D _FILE_OFFSET_BITS=64 -D BUILDING_NODE_EXTENSION -I /Users/purcellj/.node-gyp/8.10.0/include/node -I /Users/purcellj/.node-gyp/8.10.0/src -I /Users/purcellj/.node-gyp/8.10.0/deps/uv/include -I /Users/purcellj/.node-gyp/8.10.0/deps/v8/include -I ../../nan -I ../includes -stdlib=libc++ -stdlib=libc++ -Os -Wall -Wendif-labels -W -Wno-unused-parameter -std=c++11 -fdeprecated-macro -fdebug-compilation-dir /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fno-rtti -fno-threadsafe-statics -fobjc-runtime=macosx-10.7.0 -fencode-extended-block-signature -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -vectorize-loops -vectorize-slp -o Release/obj.target/pkcs11/src/const.o -x c++ ../src/const.cpp
+clang -cc1 version 9.0.0 (clang-900.0.39.2) default target x86_64-apple-darwin17.4.0
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/src"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/uv/include"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/v8/include"
+ignoring nonexistent directory "/usr/include/c++/v1"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/purcellj/.node-gyp/8.10.0/include/node
+ ../../nan
+ ../includes
+ /Library/Developer/CommandLineTools/usr/include/c++/v1
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include
+ /Library/Developer/CommandLineTools/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+  CXX(target) Release/obj.target/pkcs11/src/pkcs11/error.o
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.7.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name error.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu core2 -target-linker-version 305 -v -dwarf-column-info -debug-info-kind=standalone -dwarf-version=2 -debugger-tuning=lldb -coverage-notes-file /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build/Release/obj.target/pkcs11/src/pkcs11/error.gcno -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0 -dependency-file ./Release/.deps/Release/obj.target/pkcs11/src/pkcs11/error.o.d.raw -MT Release/obj.target/pkcs11/src/pkcs11/error.o -D NODE_GYP_MODULE_NAME=pkcs11 -D USING_UV_SHARED=1 -D USING_V8_SHARED=1 -D V8_DEPRECATION_WARNINGS=1 -D _DARWIN_USE_64_BIT_INODE=1 -D _LARGEFILE_SOURCE -D _FILE_OFFSET_BITS=64 -D BUILDING_NODE_EXTENSION -I /Users/purcellj/.node-gyp/8.10.0/include/node -I /Users/purcellj/.node-gyp/8.10.0/src -I /Users/purcellj/.node-gyp/8.10.0/deps/uv/include -I /Users/purcellj/.node-gyp/8.10.0/deps/v8/include -I ../../nan -I ../includes -stdlib=libc++ -stdlib=libc++ -Os -Wall -Wendif-labels -W -Wno-unused-parameter -std=c++11 -fdeprecated-macro -fdebug-compilation-dir /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fno-rtti -fno-threadsafe-statics -fobjc-runtime=macosx-10.7.0 -fencode-extended-block-signature -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -vectorize-loops -vectorize-slp -o Release/obj.target/pkcs11/src/pkcs11/error.o -x c++ ../src/pkcs11/error.cpp
+clang -cc1 version 9.0.0 (clang-900.0.39.2) default target x86_64-apple-darwin17.4.0
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/src"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/uv/include"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/v8/include"
+ignoring nonexistent directory "/usr/include/c++/v1"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/purcellj/.node-gyp/8.10.0/include/node
+ ../../nan
+ ../includes
+ /Library/Developer/CommandLineTools/usr/include/c++/v1
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include
+ /Library/Developer/CommandLineTools/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+  CXX(target) Release/obj.target/pkcs11/src/pkcs11/v8_convert.o
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.7.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name v8_convert.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu core2 -target-linker-version 305 -v -dwarf-column-info -debug-info-kind=standalone -dwarf-version=2 -debugger-tuning=lldb -coverage-notes-file /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build/Release/obj.target/pkcs11/src/pkcs11/v8_convert.gcno -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0 -dependency-file ./Release/.deps/Release/obj.target/pkcs11/src/pkcs11/v8_convert.o.d.raw -MT Release/obj.target/pkcs11/src/pkcs11/v8_convert.o -D NODE_GYP_MODULE_NAME=pkcs11 -D USING_UV_SHARED=1 -D USING_V8_SHARED=1 -D V8_DEPRECATION_WARNINGS=1 -D _DARWIN_USE_64_BIT_INODE=1 -D _LARGEFILE_SOURCE -D _FILE_OFFSET_BITS=64 -D BUILDING_NODE_EXTENSION -I /Users/purcellj/.node-gyp/8.10.0/include/node -I /Users/purcellj/.node-gyp/8.10.0/src -I /Users/purcellj/.node-gyp/8.10.0/deps/uv/include -I /Users/purcellj/.node-gyp/8.10.0/deps/v8/include -I ../../nan -I ../includes -stdlib=libc++ -stdlib=libc++ -Os -Wall -Wendif-labels -W -Wno-unused-parameter -std=c++11 -fdeprecated-macro -fdebug-compilation-dir /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fno-rtti -fno-threadsafe-statics -fobjc-runtime=macosx-10.7.0 -fencode-extended-block-signature -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -vectorize-loops -vectorize-slp -o Release/obj.target/pkcs11/src/pkcs11/v8_convert.o -x c++ ../src/pkcs11/v8_convert.cpp
+clang -cc1 version 9.0.0 (clang-900.0.39.2) default target x86_64-apple-darwin17.4.0
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/src"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/uv/include"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/v8/include"
+ignoring nonexistent directory "/usr/include/c++/v1"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/purcellj/.node-gyp/8.10.0/include/node
+ ../../nan
+ ../includes
+ /Library/Developer/CommandLineTools/usr/include/c++/v1
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include
+ /Library/Developer/CommandLineTools/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+  CXX(target) Release/obj.target/pkcs11/src/pkcs11/template.o
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.7.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name template.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu core2 -target-linker-version 305 -v -dwarf-column-info -debug-info-kind=standalone -dwarf-version=2 -debugger-tuning=lldb -coverage-notes-file /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build/Release/obj.target/pkcs11/src/pkcs11/template.gcno -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0 -dependency-file ./Release/.deps/Release/obj.target/pkcs11/src/pkcs11/template.o.d.raw -MT Release/obj.target/pkcs11/src/pkcs11/template.o -D NODE_GYP_MODULE_NAME=pkcs11 -D USING_UV_SHARED=1 -D USING_V8_SHARED=1 -D V8_DEPRECATION_WARNINGS=1 -D _DARWIN_USE_64_BIT_INODE=1 -D _LARGEFILE_SOURCE -D _FILE_OFFSET_BITS=64 -D BUILDING_NODE_EXTENSION -I /Users/purcellj/.node-gyp/8.10.0/include/node -I /Users/purcellj/.node-gyp/8.10.0/src -I /Users/purcellj/.node-gyp/8.10.0/deps/uv/include -I /Users/purcellj/.node-gyp/8.10.0/deps/v8/include -I ../../nan -I ../includes -stdlib=libc++ -stdlib=libc++ -Os -Wall -Wendif-labels -W -Wno-unused-parameter -std=c++11 -fdeprecated-macro -fdebug-compilation-dir /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fno-rtti -fno-threadsafe-statics -fobjc-runtime=macosx-10.7.0 -fencode-extended-block-signature -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -vectorize-loops -vectorize-slp -o Release/obj.target/pkcs11/src/pkcs11/template.o -x c++ ../src/pkcs11/template.cpp
+clang -cc1 version 9.0.0 (clang-900.0.39.2) default target x86_64-apple-darwin17.4.0
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/src"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/uv/include"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/v8/include"
+ignoring nonexistent directory "/usr/include/c++/v1"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/purcellj/.node-gyp/8.10.0/include/node
+ ../../nan
+ ../includes
+ /Library/Developer/CommandLineTools/usr/include/c++/v1
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include
+ /Library/Developer/CommandLineTools/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+  CXX(target) Release/obj.target/pkcs11/src/pkcs11/mech.o
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.7.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name mech.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu core2 -target-linker-version 305 -v -dwarf-column-info -debug-info-kind=standalone -dwarf-version=2 -debugger-tuning=lldb -coverage-notes-file /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build/Release/obj.target/pkcs11/src/pkcs11/mech.gcno -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0 -dependency-file ./Release/.deps/Release/obj.target/pkcs11/src/pkcs11/mech.o.d.raw -MT Release/obj.target/pkcs11/src/pkcs11/mech.o -D NODE_GYP_MODULE_NAME=pkcs11 -D USING_UV_SHARED=1 -D USING_V8_SHARED=1 -D V8_DEPRECATION_WARNINGS=1 -D _DARWIN_USE_64_BIT_INODE=1 -D _LARGEFILE_SOURCE -D _FILE_OFFSET_BITS=64 -D BUILDING_NODE_EXTENSION -I /Users/purcellj/.node-gyp/8.10.0/include/node -I /Users/purcellj/.node-gyp/8.10.0/src -I /Users/purcellj/.node-gyp/8.10.0/deps/uv/include -I /Users/purcellj/.node-gyp/8.10.0/deps/v8/include -I ../../nan -I ../includes -stdlib=libc++ -stdlib=libc++ -Os -Wall -Wendif-labels -W -Wno-unused-parameter -std=c++11 -fdeprecated-macro -fdebug-compilation-dir /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fno-rtti -fno-threadsafe-statics -fobjc-runtime=macosx-10.7.0 -fencode-extended-block-signature -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -vectorize-loops -vectorize-slp -o Release/obj.target/pkcs11/src/pkcs11/mech.o -x c++ ../src/pkcs11/mech.cpp
+clang -cc1 version 9.0.0 (clang-900.0.39.2) default target x86_64-apple-darwin17.4.0
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/src"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/uv/include"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/v8/include"
+ignoring nonexistent directory "/usr/include/c++/v1"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/purcellj/.node-gyp/8.10.0/include/node
+ ../../nan
+ ../includes
+ /Library/Developer/CommandLineTools/usr/include/c++/v1
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include
+ /Library/Developer/CommandLineTools/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+  CXX(target) Release/obj.target/pkcs11/src/pkcs11/param.o
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.7.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name param.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu core2 -target-linker-version 305 -v -dwarf-column-info -debug-info-kind=standalone -dwarf-version=2 -debugger-tuning=lldb -coverage-notes-file /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build/Release/obj.target/pkcs11/src/pkcs11/param.gcno -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0 -dependency-file ./Release/.deps/Release/obj.target/pkcs11/src/pkcs11/param.o.d.raw -MT Release/obj.target/pkcs11/src/pkcs11/param.o -D NODE_GYP_MODULE_NAME=pkcs11 -D USING_UV_SHARED=1 -D USING_V8_SHARED=1 -D V8_DEPRECATION_WARNINGS=1 -D _DARWIN_USE_64_BIT_INODE=1 -D _LARGEFILE_SOURCE -D _FILE_OFFSET_BITS=64 -D BUILDING_NODE_EXTENSION -I /Users/purcellj/.node-gyp/8.10.0/include/node -I /Users/purcellj/.node-gyp/8.10.0/src -I /Users/purcellj/.node-gyp/8.10.0/deps/uv/include -I /Users/purcellj/.node-gyp/8.10.0/deps/v8/include -I ../../nan -I ../includes -stdlib=libc++ -stdlib=libc++ -Os -Wall -Wendif-labels -W -Wno-unused-parameter -std=c++11 -fdeprecated-macro -fdebug-compilation-dir /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fno-rtti -fno-threadsafe-statics -fobjc-runtime=macosx-10.7.0 -fencode-extended-block-signature -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -vectorize-loops -vectorize-slp -o Release/obj.target/pkcs11/src/pkcs11/param.o -x c++ ../src/pkcs11/param.cpp
+clang -cc1 version 9.0.0 (clang-900.0.39.2) default target x86_64-apple-darwin17.4.0
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/src"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/uv/include"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/v8/include"
+ignoring nonexistent directory "/usr/include/c++/v1"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/purcellj/.node-gyp/8.10.0/include/node
+ ../../nan
+ ../includes
+ /Library/Developer/CommandLineTools/usr/include/c++/v1
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include
+ /Library/Developer/CommandLineTools/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+  CXX(target) Release/obj.target/pkcs11/src/pkcs11/param_aes.o
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.7.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name param_aes.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu core2 -target-linker-version 305 -v -dwarf-column-info -debug-info-kind=standalone -dwarf-version=2 -debugger-tuning=lldb -coverage-notes-file /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build/Release/obj.target/pkcs11/src/pkcs11/param_aes.gcno -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0 -dependency-file ./Release/.deps/Release/obj.target/pkcs11/src/pkcs11/param_aes.o.d.raw -MT Release/obj.target/pkcs11/src/pkcs11/param_aes.o -D NODE_GYP_MODULE_NAME=pkcs11 -D USING_UV_SHARED=1 -D USING_V8_SHARED=1 -D V8_DEPRECATION_WARNINGS=1 -D _DARWIN_USE_64_BIT_INODE=1 -D _LARGEFILE_SOURCE -D _FILE_OFFSET_BITS=64 -D BUILDING_NODE_EXTENSION -I /Users/purcellj/.node-gyp/8.10.0/include/node -I /Users/purcellj/.node-gyp/8.10.0/src -I /Users/purcellj/.node-gyp/8.10.0/deps/uv/include -I /Users/purcellj/.node-gyp/8.10.0/deps/v8/include -I ../../nan -I ../includes -stdlib=libc++ -stdlib=libc++ -Os -Wall -Wendif-labels -W -Wno-unused-parameter -std=c++11 -fdeprecated-macro -fdebug-compilation-dir /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fno-rtti -fno-threadsafe-statics -fobjc-runtime=macosx-10.7.0 -fencode-extended-block-signature -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -vectorize-loops -vectorize-slp -o Release/obj.target/pkcs11/src/pkcs11/param_aes.o -x c++ ../src/pkcs11/param_aes.cpp
+clang -cc1 version 9.0.0 (clang-900.0.39.2) default target x86_64-apple-darwin17.4.0
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/src"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/uv/include"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/v8/include"
+ignoring nonexistent directory "/usr/include/c++/v1"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/purcellj/.node-gyp/8.10.0/include/node
+ ../../nan
+ ../includes
+ /Library/Developer/CommandLineTools/usr/include/c++/v1
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include
+ /Library/Developer/CommandLineTools/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+  CXX(target) Release/obj.target/pkcs11/src/pkcs11/param_rsa.o
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.7.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name param_rsa.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu core2 -target-linker-version 305 -v -dwarf-column-info -debug-info-kind=standalone -dwarf-version=2 -debugger-tuning=lldb -coverage-notes-file /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build/Release/obj.target/pkcs11/src/pkcs11/param_rsa.gcno -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0 -dependency-file ./Release/.deps/Release/obj.target/pkcs11/src/pkcs11/param_rsa.o.d.raw -MT Release/obj.target/pkcs11/src/pkcs11/param_rsa.o -D NODE_GYP_MODULE_NAME=pkcs11 -D USING_UV_SHARED=1 -D USING_V8_SHARED=1 -D V8_DEPRECATION_WARNINGS=1 -D _DARWIN_USE_64_BIT_INODE=1 -D _LARGEFILE_SOURCE -D _FILE_OFFSET_BITS=64 -D BUILDING_NODE_EXTENSION -I /Users/purcellj/.node-gyp/8.10.0/include/node -I /Users/purcellj/.node-gyp/8.10.0/src -I /Users/purcellj/.node-gyp/8.10.0/deps/uv/include -I /Users/purcellj/.node-gyp/8.10.0/deps/v8/include -I ../../nan -I ../includes -stdlib=libc++ -stdlib=libc++ -Os -Wall -Wendif-labels -W -Wno-unused-parameter -std=c++11 -fdeprecated-macro -fdebug-compilation-dir /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fno-rtti -fno-threadsafe-statics -fobjc-runtime=macosx-10.7.0 -fencode-extended-block-signature -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -vectorize-loops -vectorize-slp -o Release/obj.target/pkcs11/src/pkcs11/param_rsa.o -x c++ ../src/pkcs11/param_rsa.cpp
+clang -cc1 version 9.0.0 (clang-900.0.39.2) default target x86_64-apple-darwin17.4.0
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/src"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/uv/include"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/v8/include"
+ignoring nonexistent directory "/usr/include/c++/v1"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/purcellj/.node-gyp/8.10.0/include/node
+ ../../nan
+ ../includes
+ /Library/Developer/CommandLineTools/usr/include/c++/v1
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include
+ /Library/Developer/CommandLineTools/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+  CXX(target) Release/obj.target/pkcs11/src/pkcs11/param_ecdh.o
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.7.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name param_ecdh.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu core2 -target-linker-version 305 -v -dwarf-column-info -debug-info-kind=standalone -dwarf-version=2 -debugger-tuning=lldb -coverage-notes-file /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build/Release/obj.target/pkcs11/src/pkcs11/param_ecdh.gcno -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0 -dependency-file ./Release/.deps/Release/obj.target/pkcs11/src/pkcs11/param_ecdh.o.d.raw -MT Release/obj.target/pkcs11/src/pkcs11/param_ecdh.o -D NODE_GYP_MODULE_NAME=pkcs11 -D USING_UV_SHARED=1 -D USING_V8_SHARED=1 -D V8_DEPRECATION_WARNINGS=1 -D _DARWIN_USE_64_BIT_INODE=1 -D _LARGEFILE_SOURCE -D _FILE_OFFSET_BITS=64 -D BUILDING_NODE_EXTENSION -I /Users/purcellj/.node-gyp/8.10.0/include/node -I /Users/purcellj/.node-gyp/8.10.0/src -I /Users/purcellj/.node-gyp/8.10.0/deps/uv/include -I /Users/purcellj/.node-gyp/8.10.0/deps/v8/include -I ../../nan -I ../includes -stdlib=libc++ -stdlib=libc++ -Os -Wall -Wendif-labels -W -Wno-unused-parameter -std=c++11 -fdeprecated-macro -fdebug-compilation-dir /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fno-rtti -fno-threadsafe-statics -fobjc-runtime=macosx-10.7.0 -fencode-extended-block-signature -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -vectorize-loops -vectorize-slp -o Release/obj.target/pkcs11/src/pkcs11/param_ecdh.o -x c++ ../src/pkcs11/param_ecdh.cpp
+clang -cc1 version 9.0.0 (clang-900.0.39.2) default target x86_64-apple-darwin17.4.0
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/src"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/uv/include"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/v8/include"
+ignoring nonexistent directory "/usr/include/c++/v1"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/purcellj/.node-gyp/8.10.0/include/node
+ ../../nan
+ ../includes
+ /Library/Developer/CommandLineTools/usr/include/c++/v1
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include
+ /Library/Developer/CommandLineTools/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+  CXX(target) Release/obj.target/pkcs11/src/pkcs11/pkcs11.o
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.7.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name pkcs11.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu core2 -target-linker-version 305 -v -dwarf-column-info -debug-info-kind=standalone -dwarf-version=2 -debugger-tuning=lldb -coverage-notes-file /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build/Release/obj.target/pkcs11/src/pkcs11/pkcs11.gcno -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0 -dependency-file ./Release/.deps/Release/obj.target/pkcs11/src/pkcs11/pkcs11.o.d.raw -MT Release/obj.target/pkcs11/src/pkcs11/pkcs11.o -D NODE_GYP_MODULE_NAME=pkcs11 -D USING_UV_SHARED=1 -D USING_V8_SHARED=1 -D V8_DEPRECATION_WARNINGS=1 -D _DARWIN_USE_64_BIT_INODE=1 -D _LARGEFILE_SOURCE -D _FILE_OFFSET_BITS=64 -D BUILDING_NODE_EXTENSION -I /Users/purcellj/.node-gyp/8.10.0/include/node -I /Users/purcellj/.node-gyp/8.10.0/src -I /Users/purcellj/.node-gyp/8.10.0/deps/uv/include -I /Users/purcellj/.node-gyp/8.10.0/deps/v8/include -I ../../nan -I ../includes -stdlib=libc++ -stdlib=libc++ -Os -Wall -Wendif-labels -W -Wno-unused-parameter -std=c++11 -fdeprecated-macro -fdebug-compilation-dir /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fno-rtti -fno-threadsafe-statics -fobjc-runtime=macosx-10.7.0 -fencode-extended-block-signature -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -vectorize-loops -vectorize-slp -o Release/obj.target/pkcs11/src/pkcs11/pkcs11.o -x c++ ../src/pkcs11/pkcs11.cpp
+clang -cc1 version 9.0.0 (clang-900.0.39.2) default target x86_64-apple-darwin17.4.0
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/src"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/uv/include"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/v8/include"
+ignoring nonexistent directory "/usr/include/c++/v1"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/purcellj/.node-gyp/8.10.0/include/node
+ ../../nan
+ ../includes
+ /Library/Developer/CommandLineTools/usr/include/c++/v1
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include
+ /Library/Developer/CommandLineTools/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+  CXX(target) Release/obj.target/pkcs11/src/async.o
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.7.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name async.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu core2 -target-linker-version 305 -v -dwarf-column-info -debug-info-kind=standalone -dwarf-version=2 -debugger-tuning=lldb -coverage-notes-file /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build/Release/obj.target/pkcs11/src/async.gcno -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0 -dependency-file ./Release/.deps/Release/obj.target/pkcs11/src/async.o.d.raw -MT Release/obj.target/pkcs11/src/async.o -D NODE_GYP_MODULE_NAME=pkcs11 -D USING_UV_SHARED=1 -D USING_V8_SHARED=1 -D V8_DEPRECATION_WARNINGS=1 -D _DARWIN_USE_64_BIT_INODE=1 -D _LARGEFILE_SOURCE -D _FILE_OFFSET_BITS=64 -D BUILDING_NODE_EXTENSION -I /Users/purcellj/.node-gyp/8.10.0/include/node -I /Users/purcellj/.node-gyp/8.10.0/src -I /Users/purcellj/.node-gyp/8.10.0/deps/uv/include -I /Users/purcellj/.node-gyp/8.10.0/deps/v8/include -I ../../nan -I ../includes -stdlib=libc++ -stdlib=libc++ -Os -Wall -Wendif-labels -W -Wno-unused-parameter -std=c++11 -fdeprecated-macro -fdebug-compilation-dir /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fno-rtti -fno-threadsafe-statics -fobjc-runtime=macosx-10.7.0 -fencode-extended-block-signature -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -vectorize-loops -vectorize-slp -o Release/obj.target/pkcs11/src/async.o -x c++ ../src/async.cpp
+clang -cc1 version 9.0.0 (clang-900.0.39.2) default target x86_64-apple-darwin17.4.0
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/src"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/uv/include"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/v8/include"
+ignoring nonexistent directory "/usr/include/c++/v1"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/purcellj/.node-gyp/8.10.0/include/node
+ ../../nan
+ ../includes
+ /Library/Developer/CommandLineTools/usr/include/c++/v1
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include
+ /Library/Developer/CommandLineTools/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+  CXX(target) Release/obj.target/pkcs11/src/node.o
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.7.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name node.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu core2 -target-linker-version 305 -v -dwarf-column-info -debug-info-kind=standalone -dwarf-version=2 -debugger-tuning=lldb -coverage-notes-file /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build/Release/obj.target/pkcs11/src/node.gcno -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0 -dependency-file ./Release/.deps/Release/obj.target/pkcs11/src/node.o.d.raw -MT Release/obj.target/pkcs11/src/node.o -D NODE_GYP_MODULE_NAME=pkcs11 -D USING_UV_SHARED=1 -D USING_V8_SHARED=1 -D V8_DEPRECATION_WARNINGS=1 -D _DARWIN_USE_64_BIT_INODE=1 -D _LARGEFILE_SOURCE -D _FILE_OFFSET_BITS=64 -D BUILDING_NODE_EXTENSION -I /Users/purcellj/.node-gyp/8.10.0/include/node -I /Users/purcellj/.node-gyp/8.10.0/src -I /Users/purcellj/.node-gyp/8.10.0/deps/uv/include -I /Users/purcellj/.node-gyp/8.10.0/deps/v8/include -I ../../nan -I ../includes -stdlib=libc++ -stdlib=libc++ -Os -Wall -Wendif-labels -W -Wno-unused-parameter -std=c++11 -fdeprecated-macro -fdebug-compilation-dir /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/pkcs11js/build -ferror-limit 19 -fmessage-length 80 -stack-protector 1 -fblocks -fno-rtti -fno-threadsafe-statics -fobjc-runtime=macosx-10.7.0 -fencode-extended-block-signature -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -vectorize-loops -vectorize-slp -o Release/obj.target/pkcs11/src/node.o -x c++ ../src/node.cpp
+clang -cc1 version 9.0.0 (clang-900.0.39.2) default target x86_64-apple-darwin17.4.0
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/src"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/uv/include"
+ignoring nonexistent directory "/Users/purcellj/.node-gyp/8.10.0/deps/v8/include"
+ignoring nonexistent directory "/usr/include/c++/v1"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/purcellj/.node-gyp/8.10.0/include/node
+ ../../nan
+ ../includes
+ /Library/Developer/CommandLineTools/usr/include/c++/v1
+ /usr/local/include
+ /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include
+ /Library/Developer/CommandLineTools/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+  SOLINK_MODULE(target) Release/pkcs11.node
+
+> grpc@1.6.6 install /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/composer-connector-hlfv1/node_modules/grpc
+> node-pre-gyp install --fallback-to-build --library=static_library
+
+[grpc] Success: "/Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/composer-connector-hlfv1/node_modules/grpc/src/node/extension_binary/node-v57-darwin-x64/grpc_node.node" is installed via remote
+
+> grpc@1.10.0 install /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/grpc
+> node-pre-gyp install --fallback-to-build --library=static_library
+
+[grpc] Success: "/Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/grpc/src/node/extension_binary/node-v57-darwin-x64-unknown/grpc_node.node" is installed via remote
+
+> sleep@5.1.1 install /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/sleep
+> node-gyp rebuild
+
+xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+
+xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+
+  CXX(target) Release/obj.target/node_sleep/sleep.o
+  SOLINK_MODULE(target) Release/node_sleep.node
+
+> websocket@1.0.25 install /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/websocket
+> (node-gyp rebuild 2> builderror.log) || (exit 0)
+
+  CXX(target) Release/obj.target/bufferutil/src/bufferutil.o
+  SOLINK_MODULE(target) Release/bufferutil.node
+  CXX(target) Release/obj.target/validation/src/validation.o
+  SOLINK_MODULE(target) Release/validation.node
+
+> cucumber-expressions@3.0.0 postinstall /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/cucumber-expressions
+> node scripts/postinstall.js
+
+
+> protobufjs@6.6.3 postinstall /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03/node_modules/composer-common/node_modules/protobufjs
+> node scripts/postinstall
+
+npm WARN prepublish-on-install As of npm@5, `prepublish` scripts are deprecated.
+npm WARN prepublish-on-install Use `prepare` for build steps and `prepublishOnly` for upload-only.
+npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
+
+> zerotoblockchain-network@0.1.6 prepublish /Users/purcellj/Box Sync/Blockchain/ZeroToBlockchain/Chapter03
+> mkdirp ./network/dist && composer archive create --sourceType dir --sourceName . -a ./network/dist/zerotoblockchain-network.bna
+
+sh: composer: command not found
+npm ERR! file sh
+npm ERR! code ELIFECYCLE
+npm ERR! errno ENOENT
+npm ERR! syscall spawn
+npm ERR! zerotoblockchain-network@0.1.6 prepublish: `mkdirp ./network/dist && composer archive create --sourceType dir --sourceName . -a ./network/dist/zerotoblockchain-network.bna`
+npm ERR! spawn ENOENT
+npm ERR! 
+npm ERR! Failed at the zerotoblockchain-network@0.1.6 prepublish script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/purcellj/.npm/_logs/2018-03-28T03_34_40_346Z-debug.log

@@ -1,0 +1,1097 @@
+JDPs-MacBook-Pro:~ purcellj$ curl -H 'Accept: application/vnd.github.v3.raw' https://raw.githubusercontent.com/rddill-IBM/ZeroToBlockchain/master/setup_OSX.sh | bash
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 12629  100 12629    0     0  40750      0 --:--:-- --:--:-- --:--:-- 40870
+
+       installation script for the Zero To Blockchain Series
+       This is for Mac OSX ONLY
+       This script will check to see if HomeBrew is installed
+          and install it if it's not already present. 
+       It will then execute a brew update and brew upgrade to ensure
+          that you are at the latest release of your brew installed packages
+       dos2unix is installed by brew to correct scripts from hyperledger and composer
+       The exec will proceed with checking to ensure you are at Node V8
+          which is required for working with HyperLedger Composer
+       The script will then install the nodejs SDK for hyperledger and composer
+       The script will finish by downloading the docker images for hyperledger
+
+Parameters:
+       Install github? true
+       Install brew?  true 
+       Install nodejs?  true 
+       Install nodejs SDK?  true 
+       Install HyperLedger Fabric?  true 
+       Hyperledger fabric tools install path?  /Users/purcellj/fabric-tools 
+       =====================================================
+       -----> getting current directory
+       =====================================================
+DIR in getCurrent is: /Users/purcellj
+       =====================================================
+       -----> Running 'bash'
+       =====================================================
+       =====================================================
+       -----> installing xCode command line tools
+       =====================================================
+xcode-select: error: command line tools are already installed, use "Software Update" to install updates
+       =====================================================
+       -----> checking Brew
+       =====================================================
+/usr/local/bin/brew
+       =====================================================
+       -----> brew already installed
+       =====================================================
+       =====================================================
+       -----> updating brew to latest version
+       =====================================================
+Updated 1 tap (homebrew/core).
+==> New Formulae
+arm-linux-gnueabihf-binutils             latexdiff
+ask-cli                                  libbi
+autopep8                                 libbitcoin-network
+bcal                                     libomp
+caffe                                    libserialport
+defaultbrowser                           llvm@5
+docker-squash                            lm4tools
+draco                                    lmod
+fastme                                   lzfse
+flintrock                                maxwell
+fselect                                  mill
+ghc@8.2                                  neomutt
+git-sizer                                octomap
+go-bindata                               parallelstl
+goto                                     python@2
+gtksourceview@4                          rtptools
+hss                                      skaffold
+icemon                                   tj
+jthread                                  wp-cli
+==> Updated Formulae
+abcde                                    kobalt
+abcmidi                                  kompose
+abyss                                    kontena
+ace                                      kotlin
+acpica                                   krakend
+adwaita-icon-theme                       kubernetes-cli
+agda                                     kubernetes-helm
+agedu                                    lablgtk
+akamai                                   languagetool
+alot                                     lasi
+amazon-ecs-cli                           lastpass-cli
+ammonite-repl                            laszip
+angular-cli                              latexila
+anjuta                                   ldc
+ansible                                  lean-cli
+ansible-cmdb                             legit
+ansible-lint                             lensfun
+ansifilter                               libatomic_ops
+apache-arrow                             libbitcoin-blockchain
+apache-spark                             libbitcoin-explorer
+apibuilder-cli                           libbitcoin-node
+apm-server                               libbitcoin-server
+app-engine-java                          libbladerf
+appscale-tools                           libchamplain
+arangodb                                 libdill
+argus-clients                            libdvdcss
+armor                                    libepoxy
+artifactory                              libfabric
+arx                                      libfixposix
+asciidoctor                              libgaiagraphics
+asciinema                                libgdata
+asdf                                     libgee
+at-spi2-atk                              libgeotiff
+at-spi2-core                             libgit2
+atk                                      libgit2-glib
+atkmm                                    libglade
+atlassian-cli                            libglademm
+ats2-postiats                            libgnomecanvas
+audacious                                libgnomecanvasmm
+auditbeat                                libgosu
+augustus                                 libgtop
+autoconf-archive                         libgweather
+automake                                 libhttpseverywhere
+awf                                      libical
+aws-elasticbeanstalk                     libinfinity
+aws-sdk-cpp                              liblas
+awscli                                   liblwgeom
+azure-cli                                libmatio
+bandcamp-dl                              libmspub
+baobab                                   libmtp
+bartycrouch                              libnice
+basex                                    libnotify
+bazel                                    libosinfo
+bedops                                   libphonenumber
+bench                                    libpq
+binaryen                                 libpqxx
+bind                                     librasterlite
+biogeme                                  librealsense
+bit                                      librest
+bitcoin                                  librsvg
+bitrise                                  librsync
+bluepill                                 libsass
+bokken                                   libsecret
+boost-python3                            libsoup
+boost-python@1.59                        libspatialite
+brotli                                   libswiften
+buildifier                               libtensorflow
+buku                                     libtrace
+burp                                     libu2f-host
+byobu                                    libucl
+bzt                                      libunistring
+caddy                                    libvirt
+caf                                      libvorbis
+cake                                     libwebsockets
+calabash                                 libzip
+carthage                                 libzzip
+cassandra                                link-grammar
+castxml                                  linkerd
+cattle                                   llvm
+cayley                                   logrotate
+cc65                                     logstash
+ccache                                   logtalk
+cdk                                      lorem
+ceres-solver                             lua
+certbot                                  lua@5.1
+certigo                                  lynis
+cfitsio                                  mackup
+chakra                                   macvim
+chamber                                  magic-wormhole
+charm-tools                              mame
+chisel                                   mapnik
+chromedriver                             mapserver
+chronograf                               masscan
+cimg                                     mat
+citus                                    maven
+ckan                                     mbedtls
+clamav                                   mdk
+clearlooks-phenix                        media-info
+clhep                                    mediaconch
+cliclick                                 mednafen
+clinfo                                   memcached
+clojure                                  mercurial
+cloog                                    meson
+clutter                                  metabase
+clutter-gst                              metricbeat
+clutter-gtk                              mftrace
+cmake                                    mikutter
+cnats                                    minbif
+cockatrice                               mingw-w64
+cockroach                                minio-mc
+coffeescript                             mitmproxy
+cogl                                     mkdocs
+conan                                    mmseqs2
+conjure-up                               molecule
+consul-backinator                        mongo-c-driver
+container-diff                           mongo-cxx-driver
+convmv                                   mongodb@3.4
+corebird                                 mozjpeg
+creduce                                  mpg123
+cromwell                                 mps-youtube
+crystal-icr                              msitools
+crystal-lang                             mujs
+csvkit                                   mutt
+csvtomd                                  mypy
+ctop                                     nano
+curl                                     nanopb-generator
+cvs2svn                                  nats-streaming-server
+cython                                   nco
+czmq                                     neo4j
+darksky-weather                          netcdf
+dartsim                                  newsboat
+datamash                                 nghttp2
+dateutils                                nginx
+dcd                                      nicotine-plus
+dcm2niix                                 nim
+dcos-cli                                 nmap
+ddgr                                     nnn
+dehydrated                               node
+dfix                                     node-build
+dfmt                                     node@4
+dhall-json                               node@6
+diamond                                  node@8
+diff-pdf                                 nodebrew
+diffoscope                               nopoll
+diffuse                                  noti
+django-completion                        notmuch
+dlib                                     nq
+dmd                                      nspr
+dmenu                                    ntopng
+dnscrypt-proxy                           ntp
+dnsmasq                                  numpy
+docfx                                    nuxeo
+docker                                   ocrmypdf
+docker-completion                        octave
+docker-compose                           ode
+docker-compose-completion                odpi
+docker-machine                           offlineimap
+docker-machine-completion                onetime
+doctl                                    oniguruma
+dovecot                                  open-scene-graph
+dropbear                                 opencoarrays
+druid                                    opencv
+dspdfviewer                              openimageio
+dub                                      openldap
+duc                                      openrct2
+duck                                     openrtsp
+duo_unix                                 openshift-cli
+duplicity                                openslide
+dynare                                   openssl
+e2fsprogs                                openssl@1.1
+easy-tag                                 openvpn
+editorconfig                             ophcrack
+efl                                      orocos-kdl
+eiffelstudio                             osm-gps-map
+elasticsearch                            osm2pgsql
+elektra                                  osquery
+elixir                                   osrm-backend
+emacs-clang-complete-async               p11-kit
+emscripten                               packer
+eralchemy                                packetbeat
+erlang                                   paket
+erlang@18                                pandoc
+erlang@19                                pandoc-citeproc
+etcd                                     pandoc-crossref
+evince                                   pango
+exempi                                   pangomm
+exploitdb                                paps
+faas-cli                                 parallel
+fades                                    passenger
+fastbit                                  pastebinit
+fb-client                                pcb
+fceux                                    pcb2gcode
+fcl                                      pcre
+fd                                       pdal
+fdk-aac                                  pdf2htmlex
+fdroidserver                             pdf2svg
+feedgnuplot                              pdfgrep
+feh                                      pdfpc
+fetch-crl                                pdfsandwich
+ffe                                      pdftoedn
+file-roller                              pdftoipe
+filebeat                                 peco
+firebase-cli                             percona-toolkit
+flow                                     pgcli
+fluent-bit                               pgformatter
+flyway                                   pgroonga
+fn                                       pgrouting
+folly                                    picard-tools
+fontforge                                pidgin
+fonttools                                pioneers
+freeciv                                  pipenv
+freeswitch                               pius
+freetds                                  planck
+fribidi                                  plank
+frobtads                                 plantuml
+frugal                                   platformio
+fuego                                    plplot
+fuse-emulator                            pmd
+g3log                                    poco
+gabedit                                  points2grid
+ganglia                                  ponysay
+gbdfed                                   poppler
+gcab                                     postgis
+gcc                                      postgresql
+gcc@6                                    postgresql@9.4
+gdal                                     postgresql@9.5
+gdcm                                     postgresql@9.6
+gdk-pixbuf                               pqiv
+gdl                                      pre-commit
+gdmap                                    prefixsuffix
+geckodriver                              presto
+gedit                                    primesieve
+geeqie                                   proj
+gegl                                     prometheus
+genometools                              protobuf
+geocode-glib                             pspg
+geoserver                                pumba
+gerbv                                    py2cairo
+get-flash-videos                         py3cairo
+get_iplayer                              pybind11
+getdns                                   pyenv
+geth                                     pygobject3
+getmail                                  pygtk
+ghc                                      pygtkglext
+ghex                                     pygtksourceview
+giflossy                                 pyqt
+gifski                                   python
+gimme                                    pytouhou
+git                                      qpdf
+git-annex                                qpid-proton
+git-cola                                 qscintilla2
+git-ftp                                  quicktype
+git-lfs                                  r
+git-recent                               rabbitmq
+gitbucket                                radare2
+gitg                                     rancher-cli
+gitlab-runner                            rawtoaces
+gjs                                      rclone
+gkrellm                                  re2
+glade                                    redex
+glib                                     redis
+glib-networking                          rgbds
+glib-openssl                             rhash
+gmime                                    rocksdb
+gmp                                      rom-tools
+gmt                                      root
+gmt@4                                    roswell
+gnatsd                                   rrdtool
+gnome-autoar                             rtags
+gnome-builder                            rtv
+gnome-recipes                            rust
+gnome-themes-standard                    s-nail
+gnu-time                                 sagittarius-scheme
+gnumeric                                 sassc
+gnuradio                                 saxon
+go-jira                                  sbcl
+gobby                                    sbt
+gobject-introspection                    sbtenv
+gocryptfs                                scala
+goffice                                  scamper
+gom                                      sccache
+gomplate                                 scipy
+goocanvas                                sdl2
+googler                                  sdl2_image
+gosu                                     sdlpop
+gpa                                      selenium-server-standalone
+gpredict                                 sfk
+gqview                                   shfmt
+gradle                                   shyaml
+grafana                                  simg2img
+grails                                   simgrid
+graphene                                 simple-tiles
+grc                                      sip
+grip                                     siril
+groovy                                   skafos
+groovyserv                               slimerjs
+grpc                                     snakemake
+grsync                                   snapcraft
+grv                                      sonar-scanner
+gsettings-desktop-schemas                source-to-image
+gsmartcontrol                            sparkey
+gsoap                                    spatialite-gui
+gspell                                   spatialite-tools
+gssdp                                    sphinx-doc
+gst-editing-services                     spigot
+gst-libav                                spin
+gst-plugins-bad                          sqlmap
+gst-plugins-base                         srt
+gst-plugins-good                         stellar-core
+gst-plugins-ugly                         streamlink
+gst-python                               submarine
+gst-rtsp-server                          subversion
+gst-validate                             subversion@1.8
+gstreamer                                suil
+gstreamermm                              suite-sparse
+gtk+                                     sundials
+gtk+3                                    svgcleaner
+gtk-chtheme                              svtplay-dl
+gtk-engines                              swift-protobuf
+gtk-gnutella                             swiftformat
+gtk-mac-integration                      swiftgen
+gtk-murrine-engine                       sylpheed
+gtk-vnc                                  syncthing
+gtkdatabox                               synfig
+gtkextra                                 talloc
+gtkmm                                    tcc
+gtkmm3                                   telegraf
+gtksourceview                            teleport
+gtksourceview3                           tepl
+gtksourceviewmm                          termbox
+gtksourceviewmm3                         terminator
+gtkspell3                                termius
+gucharmap                                terraform
+gupnp                                    terragrunt
+gupnp-av                                 testssl
+gupnp-tools                              thefuck
+gutenberg                                tile38
+gwyddion                                 tippecanoe
+gxml                                     todoman
+h2                                       tomcat
+hackrf                                   tor
+hadolint                                 traefik
+hana                                     translate-shell
+harfbuzz                                 translate-toolkit
+hashpump                                 treefrog
+hayai                                    twarc
+heartbeat                                twine-pypi
+help2man                                 twoping
+heroku                                   twtxt
+hfstospell                               u-boot-tools
+hg-fast-export                           uhd
+hlint                                    unison
+homebank                                 unixodbc
+hopenpgp-tools                           unrar
+htop                                     urh
+httpd                                    vagrant-completion
+httpie                                   vala
+hugo                                     vapoursynth
+hwloc                                    varnish
+i3                                       vault
+i3status                                 vdirsyncer
+icarus-verilog                           verilator
+icoutils                                 viewvc
+igv                                      vim
+imagemagick                              vim@7.4
+imagemagick@6                            vips
+influxdb                                 vis
+iperf3                                   vnstat
+ipfs                                     vte
+ipython                                  vte3
+ipython@5                                vtk
+ircd-hybrid                              webpack
+isc-dhcp                                 weechat
+isl                                      wesnoth
+iso-codes                                whatmp3
+jadx                                     wireguard-tools
+jbake                                    woboq_codebrowser
+jbig2enc                                 wtf
+jenkins                                  wxmac
+jenkins-job-builder                      xboard
+jenkins-lts                              xdot
+jhipster                                 xerces-c
+jmxtrans                                 xmrig
+joplin                                   xonsh
+jq                                       xsane
+json-fortran                             xtensor
+json-glib                                yaml-cpp
+jsonnet                                  yarn
+juju                                     yelp-tools
+juju-wait                                yosys
+jupyter                                  you-get
+just                                     youtube-dl
+kapacitor                                z3
+kedge                                    zenity
+keepassc                                 zeromq
+kerl                                     zig
+khal                                     zim
+khard                                    znc
+kibana                                   zstd
+klavaro
+==> Renamed Formulae
+php72 -> php
+==> Deleted Formulae
+llvm@3.8  mal4s     mimetic   nazghul   picolisp  python3   ufoai     voltdb
+       =====================================================
+       -----> upgrading your installed brew packages
+       =====================================================
+==> Downloading https://homebrew.bintray.com/bottles/dos2unix-7.4.0.high_sierra.
+######################################################################## 100.0%
+==> Pouring dos2unix-7.4.0.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/dos2unix/7.4.0: 24 files, 360.4KB
+       =====================================================
+       -----> checking git
+       =====================================================
+/usr/bin/git
+       =====================================================
+       -----> git already installed
+       =====================================================
+       =====================================================
+       -----> downloading GitHub Desktop for OSX
+       =====================================================
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 27.6M  100 27.6M    0     0  4527k      0  0:00:06  0:00:06 --:--:-- 5358k
+       =====================================================
+       -----> unzipping GitHub Desktop
+       =====================================================
+       =====================================================
+       -----> Installing GitHub Desktop
+       =====================================================
+       =====================================================
+       -----> removing intermediate files
+       =====================================================
+       =====================================================
+       -----> checking nodejs
+       =====================================================
+/usr/local/bin/node
+==> Searching local taps...
+==> Searching taps on GitHub...
+       =====================================================
+       -----> found node 0 installed, but not V8. installing Node V8
+       =====================================================
+==> Installing dependencies for node@8: icu4c
+==> Installing node@8 dependency: icu4c
+==> Downloading https://homebrew.bintray.com/bottles/icu4c-60.2.high_sierra.bott
+######################################################################## 100.0%
+==> Pouring icu4c-60.2.high_sierra.bottle.tar.gz
+==> Caveats
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides libicucore.dylib (but nothing else).
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> ~/.bash_profile
+  echo 'export PATH="/usr/local/opt/icu4c/sbin:$PATH"' >> ~/.bash_profile
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/icu4c/lib
+    CPPFLAGS: -I/usr/local/opt/icu4c/include
+
+==> Summary
+🍺  /usr/local/Cellar/icu4c/60.2: 249 files, 67MB
+==> Installing node@8
+==> Downloading https://homebrew.bintray.com/bottles/node@8-8.10.0.high_sierra.b
+######################################################################## 100.0%
+==> Pouring node@8-8.10.0.high_sierra.bottle.tar.gz
+==> Caveats
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/node@8/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/node@8/lib
+    CPPFLAGS: -I/usr/local/opt/node@8/include
+
+==> Summary
+🍺  /usr/local/Cellar/node@8/8.10.0: 4,430 files, 47.3MB
+       =====================================================
+       -----> installing jsdoc globally
+       =====================================================
+npm WARN checkPermissions Missing write access to /usr/local/lib/node_modules
+npm ERR! path /usr/local/lib/node_modules
+npm ERR! code EACCES
+npm ERR! errno -13
+npm ERR! syscall access
+npm ERR! Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!  { Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!   stack: 'Error: EACCES: permission denied, access \'/usr/local/lib/node_modules\'',
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   syscall: 'access',
+npm ERR!   path: '/usr/local/lib/node_modules' }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/purcellj/.npm/_logs/2018-03-27T20_02_26_178Z-debug.log
+       =====================================================
+       -----> installing node-gyp globally
+       =====================================================
+npm WARN checkPermissions Missing write access to /usr/local/lib/node_modules
+npm ERR! path /usr/local/lib/node_modules
+npm ERR! code EACCES
+npm ERR! errno -13
+npm ERR! syscall access
+npm ERR! Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!  { Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!   stack: 'Error: EACCES: permission denied, access \'/usr/local/lib/node_modules\'',
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   syscall: 'access',
+npm ERR!   path: '/usr/local/lib/node_modules' }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+
+
+   ╭─────────────────────────────────────╮
+   │                                     │
+   │   Update available 5.6.0 → 5.8.0    │
+   │     Run npm i -g npm to update      │
+   │                                     │
+   ╰─────────────────────────────────────╯
+
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/purcellj/.npm/_logs/2018-03-27T20_02_29_262Z-debug.log
+       =====================================================
+       -----> installing nodejs SDK for hyperledger composer
+       =====================================================
+       =====================================================
+       -----> The composer-cli contains all the command line operations for developing business networks.
+       =====================================================
+up to date in 0.043s
+npm WARN deprecated fs-promise@1.0.0: Use mz or fs-extra^3.0 with Promise Support
+npm WARN deprecated crypto@0.0.3: This package is no longer supported. It's now a built-in Node module. If you've depended on crypto, you should switch to the one that's built-in.
+npm WARN deprecated jade@1.11.0: Jade has been renamed to pug, please install the latest version of pug instead of jade
+npm WARN deprecated constantinople@3.0.2: Please update to at least constantinople 3.1.1
+npm WARN deprecated transformers@2.1.0: Deprecated, use jstransformer
+npm WARN deprecated nodemailer@2.7.2: All versions below 4.0.1 of Nodemailer are deprecated. See https://nodemailer.com/status/
+npm WARN deprecated socks@1.1.9: If using 2.x branch, please upgrade to at least 2.1.6 to avoid a serious bug with socket data flow and an import issue introduced in 2.1.0
+npm WARN deprecated mailcomposer@4.0.1: This project is unmaintained
+npm WARN deprecated buildmail@4.0.1: This project is unmaintained
+npm WARN checkPermissions Missing write access to /usr/local/lib/node_modules
+npm ERR! path /usr/local/lib/node_modules
+npm ERR! code EACCES
+npm ERR! errno -13
+npm ERR! syscall access
+npm ERR! Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!  { Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!   stack: 'Error: EACCES: permission denied, access \'/usr/local/lib/node_modules\'',
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   syscall: 'access',
+npm ERR!   path: '/usr/local/lib/node_modules' }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/purcellj/.npm/_logs/2018-03-27T20_02_52_946Z-debug.log
+       =====================================================
+       -----> The generator-hyperledger-composer is a Yeoman plugin that creates bespoke applications for your business network.
+       =====================================================
+up to date in 0.041s
+npm WARN deprecated fs-promise@1.0.0: Use mz or fs-extra^3.0 with Promise Support
+npm WARN deprecated crypto@0.0.3: This package is no longer supported. It's now a built-in Node module. If you've depended on crypto, you should switch to the one that's built-in.
+npm WARN deprecated formatio@1.2.0: This package is unmaintained. Use @sinonjs/formatio instead
+npm WARN checkPermissions Missing write access to /usr/local/lib/node_modules
+npm ERR! path /usr/local/lib/node_modules
+npm ERR! code EACCES
+npm ERR! errno -13
+npm ERR! syscall access
+npm ERR! Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!  { Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!   stack: 'Error: EACCES: permission denied, access \'/usr/local/lib/node_modules\'',
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   syscall: 'access',
+npm ERR!   path: '/usr/local/lib/node_modules' }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/purcellj/.npm/_logs/2018-03-27T20_03_07_865Z-debug.log
+       =====================================================
+       -----> The composer-rest-server uses the Hyperledger Composer LoopBack Connector to connect to a business network, extract the models and then present a page containing the REST APIs that have been generated for the model.
+       =====================================================
+up to date in 0.04s
+npm WARN deprecated jade@1.11.0: Jade has been renamed to pug, please install the latest version of pug instead of jade
+npm WARN deprecated fs-promise@1.0.0: Use mz or fs-extra^3.0 with Promise Support
+npm WARN deprecated crypto@0.0.3: This package is no longer supported. It's now a built-in Node module. If you've depended on crypto, you should switch to the one that's built-in.
+npm WARN deprecated constantinople@3.0.2: Please update to at least constantinople 3.1.1
+npm WARN deprecated transformers@2.1.0: Deprecated, use jstransformer
+npm WARN deprecated nodemailer@2.7.2: All versions below 4.0.1 of Nodemailer are deprecated. See https://nodemailer.com/status/
+npm WARN deprecated mailcomposer@4.0.1: This project is unmaintained
+npm WARN deprecated socks@1.1.9: If using 2.x branch, please upgrade to at least 2.1.6 to avoid a serious bug with socket data flow and an import issue introduced in 2.1.0
+npm WARN deprecated buildmail@4.0.1: This project is unmaintained
+npm WARN checkPermissions Missing write access to /usr/local/lib/node_modules
+npm ERR! path /usr/local/lib/node_modules
+npm ERR! code EACCES
+npm ERR! errno -13
+npm ERR! syscall access
+npm ERR! Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!  { Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!   stack: 'Error: EACCES: permission denied, access \'/usr/local/lib/node_modules\'',
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   syscall: 'access',
+npm ERR!   path: '/usr/local/lib/node_modules' }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/purcellj/.npm/_logs/2018-03-27T20_03_25_783Z-debug.log
+       =====================================================
+       -----> Yeoman is a tool for generating applications. When combined with the generator-hyperledger-composer component, it can interpret business networks and generate applications based on them.
+       =====================================================
+npm WARN checkPermissions Missing write access to /usr/local/lib/node_modules
+npm ERR! path /usr/local/lib/node_modules
+npm ERR! code EACCES
+npm ERR! errno -13
+npm ERR! syscall access
+npm ERR! Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!  { Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!   stack: 'Error: EACCES: permission denied, access \'/usr/local/lib/node_modules\'',
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   syscall: 'access',
+npm ERR!   path: '/usr/local/lib/node_modules' }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/purcellj/.npm/_logs/2018-03-27T20_03_34_772Z-debug.log
+       =====================================================
+       -----> installing hyperledger docker images
+       =====================================================
+/Users/purcellj/fabric-tools
+       =====================================================
+       -----> creating hlf tools folder /Users/purcellj/fabric-tools 
+       =====================================================
+/Users/purcellj/fabric-tools
+       =====================================================
+       -----> retrieving image scripts from git
+       =====================================================
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  133k  100  133k    0     0   337k      0 --:--:-- --:--:-- --:--:--  337k
+       =====================================================
+       -----> unzipping images
+       =====================================================
+Archive:  fabric-dev-servers.zip
+  inflating: package.json            
+  inflating: _loader.sh              
+  inflating: createComposerProfile.sh  
+  inflating: createPeerAdminCard.sh  
+  inflating: downloadFabric.sh       
+  inflating: startFabric.sh          
+  inflating: stopFabric.sh           
+  inflating: teardownAllDocker.sh    
+  inflating: teardownFabric.sh       
+   creating: fabric-scripts/hlfv1/
+   creating: fabric-scripts/hlfv11/
+   creating: fabric-scripts/hlfv1/composer/
+  inflating: fabric-scripts/hlfv1/createComposerProfile.sh  
+  inflating: fabric-scripts/hlfv1/createPeerAdminCard.sh  
+  inflating: fabric-scripts/hlfv1/downloadFabric.sh  
+  inflating: fabric-scripts/hlfv1/startFabric.sh  
+  inflating: fabric-scripts/hlfv1/stopFabric.sh  
+  inflating: fabric-scripts/hlfv1/teardownFabric.sh  
+   creating: fabric-scripts/hlfv11/composer/
+  inflating: fabric-scripts/hlfv11/createComposerProfile.sh  
+  inflating: fabric-scripts/hlfv11/createPeerAdminCard.sh  
+  inflating: fabric-scripts/hlfv11/downloadFabric.sh  
+  inflating: fabric-scripts/hlfv11/startFabric.sh  
+  inflating: fabric-scripts/hlfv11/stopFabric.sh  
+  inflating: fabric-scripts/hlfv11/teardownFabric.sh  
+  inflating: fabric-scripts/hlfv1/composer/composer-channel.tx  
+  inflating: fabric-scripts/hlfv1/composer/composer-genesis.block  
+  inflating: fabric-scripts/hlfv1/composer/configtx.yaml  
+   creating: fabric-scripts/hlfv1/composer/creds/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/
+  inflating: fabric-scripts/hlfv1/composer/crypto-config.yaml  
+  inflating: fabric-scripts/hlfv1/composer/docker-compose.yml  
+  inflating: fabric-scripts/hlfv1/composer/howtobuild.txt  
+  inflating: fabric-scripts/hlfv11/composer/composer-channel.tx  
+  inflating: fabric-scripts/hlfv11/composer/composer-genesis.block  
+  inflating: fabric-scripts/hlfv11/composer/configtx.yaml  
+   creating: fabric-scripts/hlfv11/composer/crypto-config/
+  inflating: fabric-scripts/hlfv11/composer/crypto-config.yaml  
+  inflating: fabric-scripts/hlfv11/composer/docker-compose-dev.yml  
+  inflating: fabric-scripts/hlfv11/composer/docker-compose.yml  
+  inflating: fabric-scripts/hlfv11/composer/howtobuild.txt  
+  inflating: fabric-scripts/hlfv1/composer/creds/114aab0e76bf0c78308f89efc4b8c9423e31568da0c340ca187a9b17aa9a4457-priv  
+  inflating: fabric-scripts/hlfv1/composer/creds/114aab0e76bf0c78308f89efc4b8c9423e31568da0c340ca187a9b17aa9a4457-pub  
+  inflating: fabric-scripts/hlfv1/composer/creds/PeerAdmin  
+  inflating: fabric-scripts/hlfv1/composer/creds/PeerAdmin.cert  
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/ca/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/msp/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/tlsca/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/ca/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/msp/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/tlsca/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/ca/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/msp/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/tlsca/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/ca/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/msp/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/tlsca/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/ca/5a6c4ce688103f8220147c6f8257eefbb5a1a8a80220c720d8152a2158021893_sk  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/ca/ca.example.com-cert.pem  
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/msp/admincerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/msp/cacerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/msp/tlscacerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/tlsca/7b50b613ab7f8142a9f3c1a7b546c9f042026ffc7439fa37b6c5c0eb91ae0c1d_sk  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem  
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/ca/19ab65abbb04807dad12e4c0a9aaa6649e70868e3abd0217a322d89e47e1a6ae_sk  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem  
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/msp/admincerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/msp/cacerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/tlsca/ed9a007fe080f78d1af5410dbf35cedac9781ce6808f3c3573b748eb0de142ac_sk  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem  
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/ca/5a6c4ce688103f8220147c6f8257eefbb5a1a8a80220c720d8152a2158021893_sk  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/ca/ca.example.com-cert.pem  
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/msp/admincerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/msp/cacerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/msp/tlscacerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/tlsca/7b50b613ab7f8142a9f3c1a7b546c9f042026ffc7439fa37b6c5c0eb91ae0c1d_sk  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem  
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/ca/19ab65abbb04807dad12e4c0a9aaa6649e70868e3abd0217a322d89e47e1a6ae_sk  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem  
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/msp/admincerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/msp/cacerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/tlsca/ed9a007fe080f78d1af5410dbf35cedac9781ce6808f3c3573b748eb0de142ac_sk  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem  
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/msp/cacerts/ca.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/msp/admincerts/Admin@example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/msp/tlscacerts/tlsca.example.com-cert.pem  
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem  
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/msp/admincerts/Admin@example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/msp/cacerts/ca.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/msp/tlscacerts/tlsca.example.com-cert.pem  
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem  
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/admincerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/cacerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/keystore/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/signcerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.crt  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.key  
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/admincerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/cacerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/tlscacerts/
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/ca.crt  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/server.crt  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/server.key  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key  
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/admincerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/cacerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/keystore/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/signcerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/admincerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/cacerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/
+   creating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/tlscacerts/
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/ca.crt  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/server.crt  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/server.key  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.crt  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.key  
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/admincerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/cacerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/keystore/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/signcerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/admincerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/cacerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/tlscacerts/
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/ca.crt  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/server.crt  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/server.key  
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/admincerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/cacerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/keystore/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/signcerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key  
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/admincerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/cacerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/
+   creating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/tlscacerts/
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/ca.crt  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/server.crt  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/server.key  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/admincerts/Admin@example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/keystore/4947ca37ff6aca98aed30b2f50b64b152f22089e51cf0a70ff5ceb76e9872d66_sk  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/cacerts/ca.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/signcerts/orderer.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/admincerts/Admin@example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore/c6211e0b87d5ac94276dbf92e4cfadf385ee78e1c46cffb9a2e454e090736065_sk  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/cacerts/ca.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/Admin@example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/tlscacerts/tlsca.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/keystore/dfb17cf51dc061d585b4850599be0e4b8b7cc8cc363a67c23bc03c6c5393b0e0_sk  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/signcerts/peer0.org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/114aab0e76bf0c78308f89efc4b8c9423e31568da0c340ca187a9b17aa9a4457_sk  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/admincerts/Admin@example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/cacerts/ca.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/keystore/4947ca37ff6aca98aed30b2f50b64b152f22089e51cf0a70ff5ceb76e9872d66_sk  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/signcerts/orderer.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/admincerts/Admin@example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/cacerts/ca.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore/c6211e0b87d5ac94276dbf92e4cfadf385ee78e1c46cffb9a2e454e090736065_sk  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/Admin@example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/tlscacerts/tlsca.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/signcerts/peer0.org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/keystore/dfb17cf51dc061d585b4850599be0e4b8b7cc8cc363a67c23bc03c6c5393b0e0_sk  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/114aab0e76bf0c78308f89efc4b8c9423e31568da0c340ca187a9b17aa9a4457_sk  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+  inflating: fabric-scripts/hlfv11/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem  
+       =====================================================
+       -----> making scripts executable
+       =====================================================
+dos2unix: converting file _loader.sh to Unix format...
+dos2unix: converting file createComposerProfile.sh to Unix format...
+dos2unix: converting file createPeerAdminCard.sh to Unix format...
+dos2unix: converting file downloadFabric.sh to Unix format...
+dos2unix: converting file startFabric.sh to Unix format...
+dos2unix: converting file stopFabric.sh to Unix format...
+dos2unix: converting file teardownAllDocker.sh to Unix format...
+dos2unix: converting file teardownFabric.sh to Unix format...
+dos2unix: converting file createComposerProfile.sh to Unix format...
+dos2unix: converting file createPeerAdminCard.sh to Unix format...
+dos2unix: converting file downloadFabric.sh to Unix format...
+dos2unix: converting file startFabric.sh to Unix format...
+dos2unix: converting file stopFabric.sh to Unix format...
+dos2unix: converting file teardownFabric.sh to Unix format...
+       =====================================================
+       -----> getting docker images for HyperLedger Fabric V1
+       =====================================================
+Development only script for Hyperledger Fabric control
+Running 'downloadFabric.sh'
+FABRIC_VERSION is set to 'hlfv1'
+FABRIC_START_TIMEOUT is unset, assuming 15 (seconds)
+
+# Set ARCH
+ARCH=`uname -m`
+uname -m
+
+# Grab the current directory.
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+ cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd 
+ dirname "${BASH_SOURCE[0]}" 
+
+# Pull and tag the latest Hyperledger Fabric base image.
+docker pull hyperledger/fabric-peer:$ARCH-1.0.4
+x86_64-1.0.4: Pulling from hyperledger/fabric-peer
+d5c6f90da05d: Pull complete 
+1300883d87d5: Pull complete 
+c220aa3cfc1b: Pull complete 
+2e9398f099dc: Pull complete 
+dc27a084064f: Pull complete 
+87675a6d4030: Pull complete 
+93e601aafda8: Pull complete 
+278385815258: Pull complete 
+78f3c6b30e0c: Pull complete 
+621be214faa6: Pull complete 
+Digest: sha256:42bf413394938a48af26a4cc6ac6393d8c61acb51736a1fe6f45447850314778
+Status: Downloaded newer image for hyperledger/fabric-peer:x86_64-1.0.4
+docker pull hyperledger/fabric-ca:$ARCH-1.0.4
+x86_64-1.0.4: Pulling from hyperledger/fabric-ca
+aafe6b5e13de: Pull complete 
+0a2b43a72660: Pull complete 
+18bdd1e546d2: Pull complete 
+8198342c3e05: Pull complete 
+f56970a44fd4: Pull complete 
+e32b597e7839: Pull complete 
+a6e362fc71c4: Pull complete 
+393395a47dcf: Pull complete 
+609c8c3598fc: Pull complete 
+be5e84dac4b7: Pull complete 
+1442c24b7c06: Pull complete 
+Digest: sha256:a9402ba2155b834d6e57c04607018b40536547414375308bb6eaf2558c87d3f0
+Status: Downloaded newer image for hyperledger/fabric-ca:x86_64-1.0.4
+docker pull hyperledger/fabric-ccenv:$ARCH-1.0.4
+x86_64-1.0.4: Pulling from hyperledger/fabric-ccenv
+d5c6f90da05d: Already exists 
+1300883d87d5: Already exists 
+c220aa3cfc1b: Already exists 
+2e9398f099dc: Already exists 
+dc27a084064f: Already exists 
+87675a6d4030: Already exists 
+93e601aafda8: Already exists 
+6be6b5cbce6b: Pull complete 
+c90d7a44426d: Pull complete 
+9767b1c8440b: Pull complete 
+b9b680c73863: Pull complete 
+949b675bb1e6: Pull complete 
+e197a5d477d5: Pull complete 
+bba80b8f0902: Pull complete 
+Digest: sha256:fbe4fe3f6cbde1f8a121aeb382ab45e9c39618bca3df523dabd43c45222e0f43
+Status: Downloaded newer image for hyperledger/fabric-ccenv:x86_64-1.0.4
+docker pull hyperledger/fabric-orderer:$ARCH-1.0.4
+x86_64-1.0.4: Pulling from hyperledger/fabric-orderer
+d5c6f90da05d: Already exists 
+1300883d87d5: Already exists 
+c220aa3cfc1b: Already exists 
+2e9398f099dc: Already exists 
+dc27a084064f: Already exists 
+87675a6d4030: Already exists 
+93e601aafda8: Already exists 
+278385815258: Already exists 
+b6da43c3ab92: Pull complete 
+90219797103a: Pull complete 
+Digest: sha256:f1f367dce7ad74d00c8e57c965cb404ef6827fd66903f07617ff40ae115f6eb0
+Status: Downloaded newer image for hyperledger/fabric-orderer:x86_64-1.0.4
+docker pull hyperledger/fabric-couchdb:$ARCH-1.0.4
+x86_64-1.0.4: Pulling from hyperledger/fabric-couchdb
+d5c6f90da05d: Already exists 
+1300883d87d5: Already exists 
+c220aa3cfc1b: Already exists 
+2e9398f099dc: Already exists 
+dc27a084064f: Already exists 
+87675a6d4030: Already exists 
+93e601aafda8: Already exists 
+6be6b5cbce6b: Already exists 
+c90d7a44426d: Already exists 
+9767b1c8440b: Already exists 
+b9b680c73863: Already exists 
+759d83568e07: Pull complete 
+8d8231c4ccd5: Pull complete 
+56557d3d9448: Pull complete 
+3853c7c3a703: Pull complete 
+500297e0951e: Pull complete 
+6f1b91ff8a33: Pull complete 
+93d8c7a5dc77: Pull complete 
+0175cb5fb9fe: Pull complete 
+Digest: sha256:05f560a61abeb001e3325a033592aa77ac3470f502b2ffe178fc9a5ae148cb5e
+Status: Downloaded newer image for hyperledger/fabric-couchdb:x86_64-1.0.4
+       =====================================================
+       -----> installing platform specific binaries for OSX
+       =====================================================
+bash: line 1: 404:: command not found
+       =====================================================
+       -----> updating .bash_profile with new paths
+       =====================================================
+       =====================================================
+       -----> copying peeradmin key to .hfc-key-store
+       =====================================================
+/Users/purcellj/fabric-tools/fabric-scripts/hlfv1/composer/creds/ -> /Users/purcellj/.hfc-key-store
+/Users/purcellj/fabric-tools/fabric-scripts/hlfv1/composer/creds//114aab0e76bf0c78308f89efc4b8c9423e31568da0c340ca187a9b17aa9a4457-priv -> /Users/purcellj/.hfc-key-store/114aab0e76bf0c78308f89efc4b8c9423e31568da0c340ca187a9b17aa9a4457-priv
+/Users/purcellj/fabric-tools/fabric-scripts/hlfv1/composer/creds//PeerAdmin.cert -> /Users/purcellj/.hfc-key-store/PeerAdmin.cert
+/Users/purcellj/fabric-tools/fabric-scripts/hlfv1/composer/creds//114aab0e76bf0c78308f89efc4b8c9423e31568da0c340ca187a9b17aa9a4457-pub -> /Users/purcellj/.hfc-key-store/114aab0e76bf0c78308f89efc4b8c9423e31568da0c340ca187a9b17aa9a4457-pub
+/Users/purcellj/fabric-tools/fabric-scripts/hlfv1/composer/creds//PeerAdmin -> /Users/purcellj/.hfc-key-store/PeerAdmin
+       =====================================================
+       -----> installation complete
+       =====================================================

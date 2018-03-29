@@ -1,0 +1,9 @@
+PATH before running setup_OSX.sh
+
+JDPs-MacBook-Pro:~ purcellj$ echo $PATH
+/Library/Frameworks/Python.framework/Versions/3.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
+
+PATH *after* running setup_OSX.sh
+
+JDPs-MacBook-Pro:_logs purcellj$ echo $PATH
+/Users/purcellj/fabric-tools/bin:/usr/local/opt/node@8/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
